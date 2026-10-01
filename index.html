@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local-Link | 우리 동네 찐 가이드</title>
+    <meta name="description" content="외국인 관광객에게 우리 동네 숨은 명소와 맛집을 소개하는 AI 가이드 플랫폼">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Pretendard and Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Pretendard:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Blur Blobs for Pastel Vibe -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo">
+            <i class="fas fa-map-marker-alt"></i> Local-Link
+        </div>
+        <div class="nav-links">
+            <a href="#features">핵심 기능</a>
+            <a href="#flow">이용 방법</a>
+            <a href="#" class="btn-primary">사전 예약하기</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge fade-in">✨ AI 기반 로컬 가이드 에이전트</div>
+            <h1 class="slide-up">외국인 친구에게<br>우리 동네의 <span class="highlight">진짜 매력</span>을 알려주세요</h1>
+            <p class="slide-up delay-1">지역 주민이 발굴한 숨은 맛집과 명소를 AI 가이드가 다국어로 안내합니다.<br>Google Maps 연동으로 길찾기부터 현지인 꿀팁까지 한 번에!</p>
+            <div class="cta-group slide-up delay-2">
+                <a href="#features" class="btn-primary"><i class="fas fa-robot"></i> 챗봇 가이드 체험</a>
+                <a href="#flow" class="btn-secondary"><i class="fas fa-camera"></i> 로컬 핫플 제보하기</a>
+            </div>
+        </div>
+        <div class="hero-image float-anim">
+            <div class="mockup-container glass-card">
+                <div class="mockup-header">
+                    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="chat-ui">
+                    <div class="chat-message bot fade-in-msg">Hello! I'm Local-Link. Looking for hidden gems in Seoul? 🗺️</div>
+                    <div class="chat-message user fade-in-msg delay-msg-1">Yes! I want a quiet cafe with a nice vibe.</div>
+                    <div class="chat-message bot fade-in-msg delay-msg-2">
+                        I recommend <span class="tag">Cafe OOO</span>. It's highly rated by locals for its peaceful atmosphere.<br><br>
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=300&q=80" alt="Cafe Image" class="chat-image"><br>
+                        Shall I show you the route on Google Maps? 📍
+                    </div>
+                    <div class="chat-message user fade-in-msg delay-msg-3">That looks amazing! Yes please.</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header reveal">
+            <h2>플랫폼 핵심 기능</h2>
+            <p>로컬 주민과 외국인 관광객을 연결하는 혁신적인 솔루션</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal glass-card">
+                <div class="icon-box color-1"><i class="fas fa-search-location"></i></div>
+                <h3>동네 명소/맛집 발굴 봇</h3>
+                <p>주민이 텍스트, 사진으로 제보한 장소를 AI가 분석하여 다국어 데이터베이스로 정제 및 구축합니다.</p>
+            </div>
+            <div class="feature-card reveal glass-card delay-1">
+                <div class="icon-box color-2"><i class="fas fa-language"></i></div>
+                <h3>외국인 맞춤 AI 가이드</h3>
+                <p>LLM 기반 에이전트가 관광객의 취향을 분석하고, 해당 장소의 한국적 문화 팁과 함께 1:1 맞춤 추천을 제공합니다.</p>
+            </div>
+            <div class="feature-card reveal glass-card delay-2">
+                <div class="icon-box color-3"><i class="fas fa-map-marked-alt"></i></div>
+                <h3>Google Maps 완벽 연동</h3>
+                <p>추천된 장소를 구글 지도에 핀으로 표시하고, 현재 위치 기준 도보 및 대중교통 길안내를 다이렉트로 지원합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Flow Section -->
+    <section id="flow" class="flow-section reveal">
+         <div class="section-header">
+            <h2>어떻게 작동하나요?</h2>
+            <p>누구나 쉽게 참여하고 정보를 얻을 수 있습니다</p>
+        </div>
+        <div class="flow-container">
+            <div class="flow-track">
+                <div class="flow-step glass-card">
+                    <div class="step-num">01</div>
+                    <h4>장소 제보 (주민)</h4>
+                    <p>우리 동네 숨은 맛집을 봇에 간편하게 등록</p>
+                </div>
+                <i class="fas fa-arrow-right flow-arrow"></i>
+                <div class="flow-step glass-card">
+                    <div class="step-num">02</div>
+                    <h4>AI 분석 및 번역</h4>
+                    <p>제보된 데이터를 검증하고 다국어로 콘텐츠화</p>
+                </div>
+                <i class="fas fa-arrow-right flow-arrow"></i>
+                <div class="flow-step glass-card">
+                    <div class="step-num">03</div>
+                    <h4>취향 추천 (관광객)</h4>
+                    <p>가이드 에이전트와 대화하며 나만의 핫플 발견</p>
+                </div>
+                <i class="fas fa-arrow-right flow-arrow"></i>
+                <div class="flow-step glass-card">
+                    <div class="step-num">04</div>
+                    <h4>Google Maps 이동</h4>
+                    <p>앱 연동으로 헤매지 않고 목적지까지 안전하게 도착</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo"><i class="fas fa-map-marker-alt"></i> Local-Link</div>
+            <p>© 2026 Local-Link Platform. All rights reserved.</p>
+            <p>Designed for the Local Guide Agent PRD.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
